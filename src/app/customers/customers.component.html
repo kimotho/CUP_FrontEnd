@@ -1,0 +1,29 @@
+<h1>Customers</h1>
+<div class="customer-list">
+  <div class="column">
+    <div class="column-heading">Customer ID</div>
+    <div *ngFor="let customer of customers" class="customer-item">
+      <span>{{ customer.customerID }}</span>
+     
+    </div>
+  </div>
+  <div class="column">
+    <div class="column-heading">Customer Name</div>
+    <div *ngFor="let customer of customers" class="customer-item">{{ customer.customerName }}</div>
+  </div>
+  <div class="column">
+    <div class="column-heading">Email Contact</div>
+    <div *ngFor="let customer of customers" class="customer-item">{{ customer.emailContact }}</div>
+  </div>
+  <div class="column">
+    <div class="column-heading">Phone Contact</div>
+    <div *ngFor="let customer of customers" class="customer-item">{{ customer.phoneContact }}</div>
+  </div>
+  <div class="column">
+    <div class="column-heading">Address</div>
+    <div *ngFor="let customer of customers" class="customer-item" (click)="generateOrder(customer.customerID)">
+      <span>{{ customer.address }}</span>
+      <button class="generate-order-button">Generate Order</button>
+    </div>
+  </div>
+</div>

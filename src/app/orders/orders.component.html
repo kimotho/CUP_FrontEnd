@@ -1,0 +1,16 @@
+<h1>Orders</h1>
+<div class="order-list">
+  <div *ngFor="let order of orders" class="order-item">
+    <ul>
+      <li><strong>Order ID:</strong> {{ order.orderID }}</li>
+      <li><strong>Customer ID:</strong> {{ order.customerID }}</li>
+      <li><strong>Item Description:</strong> {{ order.itemDescription }}</li>
+      <li><strong>Quantity:</strong> {{ order.quantity }}</li>
+      <li><strong>Price:</strong> {{ order.price }}</li>
+      <li><strong>Total:</strong> {{ order.total }}</li>
+      <li><strong>Order Description:</strong> {{ order.orderDescription }}</li>
+    </ul>
+  </div>
+</div>
+
+<button class="create-order-button" >Create Order</button>

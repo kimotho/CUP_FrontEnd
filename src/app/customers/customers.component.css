@@ -1,0 +1,21 @@
+.customer-list {
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+  }
+  
+  .column-heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .customer-item {
+    margin-bottom: 5px;
+  }
+  
